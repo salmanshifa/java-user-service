@@ -11,7 +11,7 @@ class JwtServiceTest {
     @Test
     void shouldGenerateAndValidateToken() {
         JwtService jwtService = new JwtService();
-        User user = new User(1L, "alice", "alice@example.com", "USER", true);
+        User user = new User(1L, "alice", "alice@example.com", "+15551234567", "USER", true);
 
         String token = jwtService.generateToken(user);
 

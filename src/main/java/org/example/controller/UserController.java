@@ -3,6 +3,7 @@ package org.example.controller;
 import jakarta.validation.Valid;
 import org.example.controller.dto.ApiResponse;
 import org.example.controller.dto.CreateUserRequest;
+import org.example.controller.dto.CreateUserResponse;
 import org.example.controller.dto.LoginRequest;
 import org.example.controller.dto.LoginResponse;
 import org.example.controller.dto.UpdateUserRequest;
@@ -13,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -57,10 +59,21 @@ public class UserController {
                 });
     }
 
+    @GetMapping("/profile")
+    public ResponseEntity<ApiResponse<User>> getProfile(Authentication authentication) {
+        return userService.findByUsername(authentication.getName())
+                .map(user -> ResponseEntity.ok(ApiResponse.success("Profile retrieved", user)))
+                .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND)
+                        .body(ApiResponse.error("User not found", null)));
+    }
+
     @PostMapping
-    public ResponseEntity<ApiResponse<User>> createUser(@Valid @RequestBody CreateUserRequest request) {
-        User created = userService.create(request.username(), request.email(), request.password(),true, request.role());
-        return ResponseEntity.created(URI.create("/users/" + created.id())).body(ApiResponse.success("User created", created));
+    public ResponseEntity<ApiResponse<CreateUserResponse>> createUser(@Valid @RequestBody CreateUserRequest request) {
+        User created = userService.create(request.username(), request.email(), request.mobileNumber(), request.password(), true, request.role());
+        String token = userService.generateJwtToken(created);
+        CreateUserResponse response = new CreateUserResponse(created, token);
+        return ResponseEntity.created(URI.create("/users/" + created.id()))
+                .body(ApiResponse.success("User created", response));
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
@@ -75,7 +88,7 @@ public class UserController {
                 .map(user -> {
                     log.info("Login successful for username={}", request.username());
                     String token = userService.generateJwtToken(user);
-                    return ResponseEntity.ok(ApiResponse.success(LoginResponse.of(token, "Login successful")));
+                    return ResponseEntity.ok(ApiResponse.success(LoginResponse.of(token, "Login successful", user)));
                 })
                 .orElseGet(() -> {
                     log.warn("Login failed for username={}", request.username());
@@ -85,8 +98,8 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ApiResponse<User>> updateUser(@PathVariable Long id, @RequestBody UpdateUserRequest request) {
-        return userService.update(id, request.username(), request.email())
+    public ResponseEntity<ApiResponse<User>> updateUser(@PathVariable Long id, @Valid @RequestBody UpdateUserRequest request) {
+        return userService.update(id, request.username(), request.email(), request.mobileNumber())
                 .map(user -> ResponseEntity.ok(ApiResponse.success("User updated", user)))
                 .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND)
                         .body(ApiResponse.error("User not found", null)));
