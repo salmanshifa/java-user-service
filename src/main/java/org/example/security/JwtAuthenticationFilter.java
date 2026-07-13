@@ -29,8 +29,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             String token = header.substring(7).trim();
             if (jwtService.validateToken(token)) {
                 String username = jwtService.extractUsername(token);
+                Long userId = jwtService.extractUserId(token);
                 var authentication = new UsernamePasswordAuthenticationToken(
-                        username,
+                        new AuthenticatedUser(username, userId),
                         null,
                         List.of(new SimpleGrantedAuthority("ROLE_USER"))
                 );
