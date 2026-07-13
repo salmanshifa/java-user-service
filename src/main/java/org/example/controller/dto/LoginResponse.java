@@ -1,7 +1,9 @@
 package org.example.controller.dto;
 
-public record LoginResponse(String token, String message) {
-    public static LoginResponse of(String token, String message) {
-        return new LoginResponse(token, message);
+import org.example.model.User;
+
+public record LoginResponse(String token, String message, User user) {
+    public static LoginResponse of(String token, String message, User user) {
+        return new LoginResponse(token, message, user);
     }
 }

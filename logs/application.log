@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2026-07-13 00:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
 2026-07-13 00:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
 2026-07-13 00:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
@@ -1082,3 +1083,1172 @@
 2026-07-13 09:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
 2026-07-13 09:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
 2026-07-13 09:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+=======
+2026-07-12 10:34:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 10:34:50 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 17428 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 10:34:50 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 10:34:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 10:34:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2026-07-12 10:34:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 10:34:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 10:34:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 10:34:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 10:34:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 10:34:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1464 ms
+2026-07-12 10:34:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 10:34:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 10:34:52 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 10:34:52 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 10:34:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 10:34:53 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'java_users'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.example.Main.main(Main.java:13)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+2026-07-12 10:34:53 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.example.Main.main(Main.java:13)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+2026-07-12 10:34:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 10:34:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 10:34:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 10:34:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 10:34:55 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'java_users'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.example.Main.main(Main.java:13)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+2026-07-12 10:34:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1049, SQLState: 42000
+2026-07-12 10:34:55 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unknown database 'java_users'
+2026-07-12 10:34:55 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'java_users'] [n/a]
+2026-07-12 10:34:55 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'java_users'] [n/a]
+2026-07-12 10:34:55 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-07-12 10:34:55 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-12 10:34:55 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'java_users'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.example.Main.main(Main.java:13)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'java_users'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'java_users'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 24 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'java_users'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 45 common frames omitted
+2026-07-12 10:39:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 10:39:01 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 18416 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 10:39:01 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 10:39:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 10:39:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2026-07-12 10:39:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 10:39:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 10:39:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 10:39:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 10:39:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 10:39:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1289 ms
+2026-07-12 10:39:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 10:39:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 10:39:03 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 10:39:03 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 10:39:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 10:39:03 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7956f93a
+2026-07-12 10:39:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 10:39:03 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 10:39:03 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 10:39:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 10:39:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 10:39:04 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 10:39:04 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 47478a7e-778f-448e-b790-f5688dce051d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-12 10:39:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bd1b07d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7789526e, org.springframework.security.web.context.SecurityContextHolderFilter@99774ec, org.springframework.security.web.header.HeaderWriterFilter@77b01226, org.springframework.security.web.authentication.logout.LogoutFilter@2c6d442d, org.example.security.JwtAuthenticationFilter@56846330, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33d2f9d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55ff64fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fafd099, org.springframework.security.web.access.ExceptionTranslationFilter@3a61d819, org.springframework.security.web.access.intercept.AuthorizationFilter@451f3f66]
+2026-07-12 10:39:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-12 10:39:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-12 10:39:05 [main] INFO  org.example.Main - Started Main in 4.293 seconds (process running for 4.769)
+2026-07-12 10:39:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 10:39:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 10:39:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-12 10:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:50:01 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:50:01 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 10:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 10:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:26:39 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Reading all users. Total users returned: 0
+2026-07-12 11:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:29:18 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 11:29:18 [http-nio-8080-exec-9] WARN  o.example.controller.UserController - Login failed for username=test
+2026-07-12 11:29:25 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 11:29:25 [http-nio-8080-exec-1] WARN  o.example.controller.UserController - Login failed for username=test
+2026-07-12 11:29:50 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.controller.dto.LoginResponse>> org.example.controller.UserController.login(org.example.controller.dto.LoginRequest): [Field error in object 'loginRequest' on field 'username': rejected value [null]; codes [NotBlank.loginRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginRequest.username,username]; arguments []; default message [username]]; default message [Username is required]] ]
+2026-07-12 11:29:53 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.controller.dto.LoginResponse>> org.example.controller.UserController.login(org.example.controller.dto.LoginRequest): [Field error in object 'loginRequest' on field 'username': rejected value [null]; codes [NotBlank.loginRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginRequest.username,username]; arguments []; default message [username]]; default message [Username is required]] ]
+2026-07-12 11:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:30:08 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 11:30:08 [http-nio-8080-exec-3] WARN  o.example.controller.UserController - Login failed for username=test
+2026-07-12 11:30:32 [http-nio-8080-exec-5] INFO  o.example.controller.UserController - Reading all users. Total users returned: 0
+2026-07-12 11:30:35 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - Reading all users. Total users returned: 0
+2026-07-12 11:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 0
+2026-07-12 11:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 1
+2026-07-12 11:32:00 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 11:32:00 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login successful for username=test
+2026-07-12 11:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 1
+2026-07-12 11:33:56 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 11:33:56 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login successful for username=test
+2026-07-12 11:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 1
+2026-07-12 11:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 1
+2026-07-12 11:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:47:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 11:47:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-12 11:47:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-12 11:47:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 11:47:54 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 680 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 11:47:54 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 11:47:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 11:47:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-07-12 11:47:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 11:47:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 11:47:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 11:47:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 11:47:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 11:47:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1451 ms
+2026-07-12 11:47:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 11:47:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 11:47:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 11:47:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 11:47:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 11:47:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d3cce46
+2026-07-12 11:47:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 11:47:57 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 11:47:57 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 11:47:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 11:47:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 11:47:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 11:47:58 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4fe52d9f-c512-4f89-ac63-aedac2eccb77
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-12 11:47:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44181746, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21fa19e4, org.springframework.security.web.context.SecurityContextHolderFilter@17e4beda, org.springframework.security.web.header.HeaderWriterFilter@408980aa, org.springframework.web.filter.CorsFilter@33a58fcb, org.springframework.security.web.authentication.logout.LogoutFilter@2bf0bb93, org.example.security.JwtAuthenticationFilter@484149eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4202bfe8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53c21c05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36a8ebca, org.springframework.security.web.access.ExceptionTranslationFilter@14091e24, org.springframework.security.web.access.intercept.AuthorizationFilter@318a81a0]
+2026-07-12 11:47:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-12 11:47:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-12 11:47:59 [main] INFO  org.example.Main - Started Main in 4.861 seconds (process running for 5.327)
+2026-07-12 11:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:49:29 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 11:49:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 11:49:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-12 11:49:30 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 2 errors: [Field error in object 'createUserRequest' on field 'password': rejected value [12345]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:50:05 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 2 errors: [Field error in object 'createUserRequest' on field 'password': rejected value [12345]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:50:58 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 2 errors: [Field error in object 'createUserRequest' on field 'password': rejected value [12345]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:51:01 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 2 errors: [Field error in object 'createUserRequest' on field 'password': rejected value [12345]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:51:12 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 2 errors: [Field error in object 'createUserRequest' on field 'password': rejected value [12345]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:51:55 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:51:57 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:57:08 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:57:13 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:57:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 11:57:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-12 11:57:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-12 11:58:09 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 11:58:09 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 24204 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 11:58:09 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 11:58:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 11:58:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-07-12 11:58:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 11:58:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 11:58:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 11:58:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 11:58:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 11:58:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1427 ms
+2026-07-12 11:58:11 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 11:58:11 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 11:58:11 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 11:58:11 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 11:58:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 11:58:11 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18c820d2
+2026-07-12 11:58:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 11:58:11 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 11:58:11 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 11:58:12 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 11:58:12 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 11:58:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 11:58:12 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5c9a44cc-8a02-4ce7-89a3-82a2f0134b80
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-12 11:58:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7789526e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fafd099, org.springframework.security.web.context.SecurityContextHolderFilter@77b01226, org.springframework.security.web.header.HeaderWriterFilter@1bca9b64, org.springframework.web.filter.CorsFilter@580e01cd, org.springframework.security.web.authentication.logout.LogoutFilter@272f5373, org.example.security.JwtAuthenticationFilter@28e0e464, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c7b100b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ec176da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e9a10e9, org.springframework.security.web.access.ExceptionTranslationFilter@51d76ad3, org.springframework.security.web.access.intercept.AuthorizationFilter@5d1eb214]
+2026-07-12 11:58:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-12 11:58:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-12 11:58:13 [main] INFO  org.example.Main - Started Main in 4.932 seconds (process running for 5.364)
+2026-07-12 11:58:14 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 11:58:14 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 11:58:14 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-12 11:58:14 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:58:17 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 11:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 11:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 11:59:00 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 5 errors: [Field error in object 'createUserRequest' on field 'password': rejected value [null]; codes [NotBlank.createUserRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password]]; default message [Password is required]] [Field error in object 'createUserRequest' on field 'username': rejected value [null]; codes [NotBlank.createUserRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.username,username]; arguments []; default message [username]]; default message [Username is required]] [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] [Field error in object 'createUserRequest' on field 'email': rejected value [null]; codes [NotBlank.createUserRequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.email,email]; arguments []; default message [email]]; default message [Email is required]] [Field error in object 'createUserRequest' on field 'role': rejected value [null]; codes [NotBlank.createUserRequest.role,NotBlank.role,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.role,role]; arguments []; default message [role]]; default message [Role is required]] ]
+2026-07-12 11:59:27 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 5 errors: [Field error in object 'createUserRequest' on field 'username': rejected value [null]; codes [NotBlank.createUserRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.username,username]; arguments []; default message [username]]; default message [Username is required]] [Field error in object 'createUserRequest' on field 'email': rejected value [null]; codes [NotBlank.createUserRequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.email,email]; arguments []; default message [email]]; default message [Email is required]] [Field error in object 'createUserRequest' on field 'role': rejected value [null]; codes [NotBlank.createUserRequest.role,NotBlank.role,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.role,role]; arguments []; default message [role]]; default message [Role is required]] [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] [Field error in object 'createUserRequest' on field 'password': rejected value [null]; codes [NotBlank.createUserRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password]]; default message [Password is required]] ]
+2026-07-12 12:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 12:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 12:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 12:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 12:03:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 12:03:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-12 12:03:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-12 12:03:51 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 12:03:51 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 4532 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 12:03:51 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 12:03:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 12:03:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2026-07-12 12:03:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 12:03:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 12:03:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 12:03:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 12:03:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 12:03:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1456 ms
+2026-07-12 12:03:53 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 12:03:53 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 12:03:53 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 12:03:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 12:03:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 12:03:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18c820d2
+2026-07-12 12:03:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 12:03:54 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 12:03:54 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 12:03:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 12:03:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 12:03:55 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 12:03:55 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2d9788eb-cb36-486a-8217-584c190ed8c9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-12 12:03:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5fafd099, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@580e01cd, org.springframework.security.web.context.SecurityContextHolderFilter@386ea60f, org.springframework.security.web.header.HeaderWriterFilter@3a61d819, org.springframework.web.filter.CorsFilter@1e9a10e9, org.springframework.security.web.authentication.logout.LogoutFilter@799557c8, org.example.security.JwtAuthenticationFilter@1d98daa0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@99774ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33d2f9d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@233d2b76, org.springframework.security.web.access.ExceptionTranslationFilter@30d2f9ea, org.springframework.security.web.access.intercept.AuthorizationFilter@2784145d]
+2026-07-12 12:03:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-12 12:03:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-12 12:03:56 [main] INFO  org.example.Main - Started Main in 5.41 seconds (process running for 5.928)
+2026-07-12 12:03:57 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 12:03:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 12:03:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-12 12:03:57 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 12:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 12:04:43 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 12:04:57 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 12:04:57 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - Login successful for username=test
+2026-07-12 12:04:59 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 12:04:59 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login successful for username=test
+2026-07-12 12:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 12:05:17 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 12:05:19 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 12:05:30 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 2 errors: [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] [Field error in object 'createUserRequest' on field 'password': rejected value [12345]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 12:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 2
+2026-07-12 12:07:26 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest) with 2 errors: [Field error in object 'createUserRequest' on field 'password': rejected value [12345]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] [Field error in object 'createUserRequest' on field 'mobileNumber': rejected value [null]; codes [NotBlank.createUserRequest.mobileNumber,NotBlank.mobileNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.mobileNumber,mobileNumber]; arguments []; default message [mobileNumber]]; default message [Mobile number is required]] ]
+2026-07-12 12:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:10:40 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [12345]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:11:33 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:13:13 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:13:46 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:14:51 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:15:24 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:15:26 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:15:57 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:16:40 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:19:13 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.controller.dto.ApiResponse<org.example.model.User>> org.example.controller.UserController.createUser(org.example.controller.dto.CreateUserRequest): [Field error in object 'createUserRequest' on field 'password': rejected value [111111]; codes [Size.createUserRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-07-12 12:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:20:13 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 12:20:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-12 12:20:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-12 12:21:19 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 12:21:19 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 5744 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 12:21:19 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 12:21:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 12:21:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2026-07-12 12:21:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 12:21:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 12:21:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 12:21:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 12:21:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 12:21:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1291 ms
+2026-07-12 12:21:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 12:21:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 12:21:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 12:21:21 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 12:21:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 12:21:21 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30c7be6f
+2026-07-12 12:21:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 12:21:21 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 12:21:21 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 12:21:22 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 12:21:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 12:21:22 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 12:21:22 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 40295edf-31ff-4e10-bbb4-a560174d82c4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-12 12:21:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@402d76c7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27adb90f, org.springframework.security.web.context.SecurityContextHolderFilter@6afb240d, org.springframework.security.web.header.HeaderWriterFilter@7207f3c2, org.springframework.web.filter.CorsFilter@1fd77205, org.springframework.security.web.authentication.logout.LogoutFilter@34c2e03d, org.example.security.JwtAuthenticationFilter@3e3cd6fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@799557c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c6d442d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9c05f, org.springframework.security.web.access.ExceptionTranslationFilter@7d3faf1d, org.springframework.security.web.access.intercept.AuthorizationFilter@45a4587d]
+2026-07-12 12:21:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-12 12:21:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-12 12:21:23 [main] INFO  org.example.Main - Started Main in 4.265 seconds (process running for 4.707)
+2026-07-12 12:21:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 12:21:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 12:21:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-12 12:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 3
+2026-07-12 12:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 4
+2026-07-12 12:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 4
+2026-07-12 12:24:03 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 12:24:03 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login successful for username=test
+2026-07-12 12:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 4
+2026-07-12 12:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 4
+2026-07-12 12:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 4
+2026-07-12 12:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 12:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 12:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:34:52 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55m510ms913µs900ns).
+2026-07-12 13:35:30 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:35:30 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:39:11 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 13:39:11 [http-nio-8080-exec-6] WARN  o.example.controller.UserController - Login failed for username=test
+2026-07-12 13:39:33 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 13:39:33 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 13:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:43:56 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 13:43:56 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 13:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:44:12 [http-nio-8080-exec-5] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 13:44:12 [http-nio-8080-exec-5] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 13:44:26 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 13:44:26 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 13:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:48:26 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 13:48:27 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 13:48:46 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 13:48:46 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 13:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:50:40 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 13:50:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-12 13:50:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-12 13:50:57 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 13:50:57 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 23948 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 13:50:57 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 13:50:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 13:50:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-07-12 13:50:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 13:50:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 13:50:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 13:50:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 13:50:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 13:50:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1293 ms
+2026-07-12 13:50:58 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 13:50:58 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 13:50:58 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 13:50:59 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 13:50:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 13:50:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fee4278
+2026-07-12 13:50:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 13:50:59 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 13:50:59 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 13:51:00 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 13:51:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 13:51:00 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 13:51:00 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8d26139b-00ce-47f9-805c-c2e357d990aa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-12 13:51:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11d0bff5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c1fed69, org.springframework.security.web.context.SecurityContextHolderFilter@7789526e, org.springframework.security.web.header.HeaderWriterFilter@5d1eb214, org.springframework.web.filter.CorsFilter@629dfb5a, org.springframework.security.web.authentication.logout.LogoutFilter@27adb90f, org.example.security.JwtAuthenticationFilter@2668c286, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@580e01cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@233d2b76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c955487, org.springframework.security.web.access.ExceptionTranslationFilter@52b7c1d9, org.springframework.security.web.access.intercept.AuthorizationFilter@56017274]
+2026-07-12 13:51:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-12 13:51:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-12 13:51:01 [main] INFO  org.example.Main - Started Main in 4.161 seconds (process running for 4.604)
+2026-07-12 13:51:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 13:51:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 13:51:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-12 13:51:26 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 13:51:27 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 13:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:57:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 13:57:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-12 13:57:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-12 13:57:16 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 13:57:16 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 24108 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 13:57:16 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 13:57:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 13:57:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2026-07-12 13:57:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 13:57:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 13:57:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 13:57:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 13:57:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 13:57:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1436 ms
+2026-07-12 13:57:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 13:57:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 13:57:18 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 13:57:18 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 13:57:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 13:57:18 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55053f81
+2026-07-12 13:57:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 13:57:18 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 13:57:18 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 13:57:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 13:57:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 13:57:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 13:57:19 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0166701e-bbbd-42cf-afda-3a753a8adf8c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-12 13:57:20 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11d0bff5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c1fed69, org.springframework.security.web.context.SecurityContextHolderFilter@7789526e, org.springframework.security.web.header.HeaderWriterFilter@5d1eb214, org.springframework.web.filter.CorsFilter@629dfb5a, org.springframework.security.web.authentication.logout.LogoutFilter@27adb90f, org.example.security.JwtAuthenticationFilter@481558ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@580e01cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@233d2b76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c955487, org.springframework.security.web.access.ExceptionTranslationFilter@52b7c1d9, org.springframework.security.web.access.intercept.AuthorizationFilter@56017274]
+2026-07-12 13:57:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-12 13:57:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-12 13:57:21 [main] INFO  org.example.Main - Started Main in 5.589 seconds (process running for 6.07)
+2026-07-12 13:57:27 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 13:57:27 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 13:57:27 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-07-12 13:57:27 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login attempt for username=test
+2026-07-12 13:57:27 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login successful for username=test
+2026-07-12 13:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 13:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 13:59:50 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-07-12 14:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:07:11 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:07:11 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:07:22 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:07:22 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:07:56 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:07:56 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:08:51 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:08:51 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:09:59 [http-nio-8080-exec-10] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:09:59 [http-nio-8080-exec-10] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:10:20 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:10:20 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:13:10 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:13:10 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:16:40 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:16:40 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:17:03 [http-nio-8080-exec-10] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:17:03 [http-nio-8080-exec-10] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:20:24 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:20:24 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:26:30 [http-nio-8080-exec-8] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:26:30 [http-nio-8080-exec-8] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:26:46 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:26:46 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:29:48 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:29:48 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:36:38 [http-nio-8080-exec-5] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:36:38 [http-nio-8080-exec-5] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:43:55 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s185ms40µs800ns).
+2026-07-12 14:43:58 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login attempt for username=khan123
+2026-07-12 14:43:58 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login successful for username=khan123
+2026-07-12 14:44:36 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:44:36 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
+2026-07-12 14:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 14:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 14:58:12 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 14:58:12 [http-nio-8080-exec-7] WARN  o.example.controller.UserController - Login failed for username=shop1
+2026-07-12 14:58:22 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 14:58:22 [http-nio-8080-exec-9] WARN  o.example.controller.UserController - Login failed for username=shop1
+2026-07-12 14:58:43 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 14:58:43 [http-nio-8080-exec-1] INFO  o.example.controller.UserController - Login successful for username=shop1
+2026-07-12 14:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 14:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:00:51 [http-nio-8080-exec-5] INFO  o.example.controller.UserController - Login attempt for username=password123
+2026-07-12 15:00:51 [http-nio-8080-exec-5] WARN  o.example.controller.UserController - Login failed for username=password123
+2026-07-12 15:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:01:03 [http-nio-8080-exec-8] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 15:01:03 [http-nio-8080-exec-8] INFO  o.example.controller.UserController - Login successful for username=shop1
+2026-07-12 15:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:14:02 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m6s429ms607µs).
+2026-07-12 15:14:31 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 15:14:31 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login successful for username=shop1
+2026-07-12 15:14:36 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:14:36 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:18:24 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 15:18:24 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login successful for username=shop1
+2026-07-12 15:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:19:21 [http-nio-8080-exec-5] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 15:19:21 [http-nio-8080-exec-5] INFO  o.example.controller.UserController - Login successful for username=shop1
+2026-07-12 15:19:58 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:19:58 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:26:15 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 15:26:15 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - Login successful for username=shop1
+2026-07-12 15:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:27:29 [http-nio-8080-exec-10] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 15:27:29 [http-nio-8080-exec-10] INFO  o.example.controller.UserController - Login successful for username=shop1
+2026-07-12 15:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:28:03 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login attempt for username=shop1
+2026-07-12 15:28:03 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login successful for username=shop1
+2026-07-12 15:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 15:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 15:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-12 18:46:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-12 18:46:52 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.11 with PID 9548 (D:\barber-project\java-user-service\target\java-user-auth-service-1.0-SNAPSHOT.jar started by User in D:\barber-project\java-user-service)
+2026-07-12 18:46:52 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 18:46:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 18:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2026-07-12 18:46:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-12 18:46:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-12 18:46:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 18:46:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-12 18:46:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 18:46:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2135 ms
+2026-07-12 18:46:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 18:46:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-12 18:46:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 18:46:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 18:46:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 18:46:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20864cd1
+2026-07-12 18:46:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 18:46:56 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 18:46:56 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 18:46:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 18:46:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 18:46:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 18:46:57 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: aaee312f-5b1c-4fc5-aa96-6ea68efad490
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-12 18:46:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@be9bf2e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@623d222, org.springframework.security.web.context.SecurityContextHolderFilter@2370c90, org.springframework.security.web.header.HeaderWriterFilter@580e01cd, org.springframework.web.filter.CorsFilter@949f0d, org.springframework.security.web.authentication.logout.LogoutFilter@4645a575, org.example.security.JwtAuthenticationFilter@1c93b51e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@644c3590, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14091e24, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b3eaf39, org.springframework.security.web.access.ExceptionTranslationFilter@7789526e, org.springframework.security.web.access.intercept.AuthorizationFilter@629dfb5a]
+2026-07-12 18:46:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-12 18:46:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-12 18:46:59 [main] INFO  org.example.Main - Started Main in 6.989 seconds (process running for 7.722)
+2026-07-12 18:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-12 18:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+>>>>>>> c65bf937d3a19c26bfe28779195e5dc635808d0b
