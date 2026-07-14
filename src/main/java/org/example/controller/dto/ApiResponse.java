@@ -16,4 +16,8 @@ public record ApiResponse<T>(String status, String message, T data) {
     public static ApiResponse<Void> success(String message) {
         return success(message, null);
     }
+
+    public static ApiResponse<Void> error(String message) {
+        return error(message, null);
+    }
 }

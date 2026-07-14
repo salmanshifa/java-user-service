@@ -1,559 +1,261 @@
-2026-07-13 16:41:37 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:41:37 [http-nio-8080-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
-2026-07-13 16:41:37 [http-nio-8080-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'active' doesn't have a default value
-2026-07-13 16:41:37 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: could not execute statement [Field 'active' doesn't have a default value] [insert into services (category,created_at,created_by,description,duration_minutes,name,price,status,updated_at,updated_by) values (?,?,?,?,?,?,?,?,?,?)]] with root cause
-java.sql.SQLException: Field 'active' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
-	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107)
-	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100)
-	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175)
-	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2862)
-	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
-	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
-	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
-	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
-	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:388)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:302)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:221)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:135)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:758)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy2/jdk.proxy2.$Proxy117.persist(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
-	at jdk.proxy2/jdk.proxy2.$Proxy117.persist(Unknown Source)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:622)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:173)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:148)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
-	at jdk.proxy2/jdk.proxy2.$Proxy121.save(Unknown Source)
-	at org.example.service.ServiceService.create(ServiceService.java:63)
-	at org.example.controller.ServiceController.createService(ServiceController.java:87)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.example.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-07-13 16:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:44:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-07-13 16:44:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-07-13 16:44:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-07-13 16:44:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-2026-07-13 16:44:12 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 162945 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
-2026-07-13 16:44:12 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
-2026-07-13 16:44:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-07-13 16:44:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
-2026-07-13 16:44:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-07-13 16:44:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-07-13 16:44:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-07-13 16:44:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-07-13 16:44:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-07-13 16:44:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 914 ms
-2026-07-13 16:44:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-07-13 16:44:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
-2026-07-13 16:44:13 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-07-13 16:44:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-07-13 16:44:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-07-13 16:44:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1da745a2
-2026-07-13 16:44:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-07-13 16:44:13 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-07-13 16:44:13 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2026-07-13 16:44:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-07-13 16:44:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-07-13 16:44:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-07-13 16:44:14 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+2026-07-14 16:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 10
+2026-07-14 16:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 10
+2026-07-14 16:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 10
+2026-07-14 16:56:21 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=shop11
+2026-07-14 16:56:21 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login successful for username=shop11
+2026-07-14 16:56:21 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 16:56:21 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 16:56:21 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Total staff returned: 2
+2026-07-14 16:56:21 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 16:56:21 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 16:56:21 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 16:56:21 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 16:56:21 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Total staff returned: 2
+2026-07-14 16:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 10
+2026-07-14 16:57:03 [http-nio-8080-exec-9] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='ESTHETICIAN', username='test121212', by userId=5
+2026-07-14 16:57:03 [http-nio-8080-exec-9] INFO  org.example.service.StaffService - Created user for staff: id=11, username='test121212', role=STAFF
+2026-07-14 16:57:03 [http-nio-8080-exec-9] INFO  org.example.service.StaffService - Created staff: id=8, name='test khan', position='ESTHETICIAN', status=ACTIVE, user=11, createdBy=5
+2026-07-14 16:57:03 [http-nio-8080-exec-9] INFO  o.example.controller.StaffController - Staff created with id: 8, userId: 11
+2026-07-14 16:57:21 [http-nio-8080-exec-1] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 16:57:21 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 16:57:21 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 16:57:21 [http-nio-8080-exec-1] INFO  o.example.controller.StaffController - Total staff returned: 3
+2026-07-14 16:57:21 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 16:57:21 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 16:57:21 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 16:57:21 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Total staff returned: 3
+2026-07-14 16:57:33 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Updating staff with id: 8, by userId=5
+2026-07-14 16:57:33 [http-nio-8080-exec-5] INFO  org.example.service.StaffService - Updated staff: id=8, name='test khan', position='ESTHETICIAN', status=ACTIVE, updatedBy=5
+2026-07-14 16:57:33 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Staff updated for id: 8
+2026-07-14 16:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 16:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:03:44 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login attempt for username=shop11
+2026-07-14 17:03:44 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login successful for username=shop11
+2026-07-14 17:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:04:00 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test2323', by userId=5
+2026-07-14 17:04:00 [http-nio-8080-exec-4] WARN  o.e.c.GlobalExceptionHandler - Bad request: A staff member with this email already exists
+2026-07-14 17:04:14 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test2323', by userId=5
+2026-07-14 17:04:14 [http-nio-8080-exec-5] WARN  o.e.c.GlobalExceptionHandler - Bad request: Username is already taken
+2026-07-14 17:04:28 [http-nio-8080-exec-8] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test23234', by userId=5
+2026-07-14 17:04:28 [http-nio-8080-exec-8] WARN  o.e.c.GlobalExceptionHandler - Bad request: Mobile number is already registered
+2026-07-14 17:04:37 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test23234', by userId=5
+2026-07-14 17:04:37 [http-nio-8080-exec-7] INFO  org.example.service.StaffService - Created user for staff: id=12, username='test23234', role=STAFF
+2026-07-14 17:04:37 [http-nio-8080-exec-7] INFO  org.example.service.StaffService - Created staff: id=9, name='test khan', position='BARBER', status=ACTIVE, user=12, createdBy=5
+2026-07-14 17:04:37 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Staff created with id: 9, userId: 12
+2026-07-14 17:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:11:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 17:11:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 17:11:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 17:11:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-14 17:11:14 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 165048 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
+2026-07-14 17:11:14 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 17:11:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 17:11:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2026-07-14 17:11:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-14 17:11:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-14 17:11:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-14 17:11:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-14 17:11:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-14 17:11:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 883 ms
+2026-07-14 17:11:15 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 17:11:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-14 17:11:15 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 17:11:15 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 17:11:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 17:11:16 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16c5b50a
+2026-07-14 17:11:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 17:11:16 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-14 17:11:16 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-14 17:11:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 17:11:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 17:11:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 17:11:16 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: abde7cb9-b0ff-4ac1-89a6-975503a09689
+Using generated security password: ce417402-9789-41e9-a9af-9be576011827
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-07-13 16:44:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@574134ba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57063e08, org.springframework.security.web.context.SecurityContextHolderFilter@2a4f1bc5, org.springframework.security.web.header.HeaderWriterFilter@32675dd4, org.springframework.web.filter.CorsFilter@6afb240d, org.springframework.security.web.authentication.logout.LogoutFilter@272485a6, org.example.security.JwtAuthenticationFilter@c689973, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@89ff043, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f57fa23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@272f5373, org.springframework.security.web.access.ExceptionTranslationFilter@f451970, org.springframework.security.web.access.intercept.AuthorizationFilter@7d3faf1d]
-2026-07-13 16:44:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-07-13 16:44:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2026-07-13 16:44:14 [main] INFO  org.example.Main - Started Main in 2.9 seconds (process running for 3.261)
-2026-07-13 16:44:15 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  org.example.service.ServiceService - Created service: id=16, name='test', category='MASSAGE', price=10.00, duration=10min, status=ACTIVE, createdBy=5
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Service created with id: 16
-2026-07-13 16:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:49:52 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:49:52 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:49:52 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:49:52 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:49:53 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:49:53 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:49:53 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:49:53 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:50:27 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:50:27 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:27 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:50:27 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:27 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:50:28 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:28 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:50:28 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:50 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Deleting service with id: 16
-2026-07-13 16:50:51 [http-nio-8080-exec-8] INFO  org.example.service.ServiceService - Deleted service: id=16
-2026-07-13 16:50:53 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Deleting service with id: 15
-2026-07-13 16:50:53 [http-nio-8080-exec-10] INFO  org.example.service.ServiceService - Deleted service: id=15
-2026-07-13 16:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:51:02 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:51:02 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 14
-2026-07-13 16:51:02 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:51:02 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 14
-2026-07-13 16:51:13 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Deleting service with id: 14
-2026-07-13 16:51:13 [http-nio-8080-exec-10] INFO  org.example.service.ServiceService - Deleted service: id=14
-2026-07-13 16:51:15 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Deleting service with id: 13
-2026-07-13 16:51:15 [http-nio-8080-exec-2] INFO  org.example.service.ServiceService - Deleted service: id=13
-2026-07-13 16:51:18 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Deleting service with id: 12
-2026-07-13 16:51:18 [http-nio-8080-exec-4] INFO  org.example.service.ServiceService - Deleted service: id=12
-2026-07-13 16:51:20 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:51:20 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services returned: 11
-2026-07-13 16:51:20 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:51:20 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services returned: 11
-2026-07-13 16:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:52:00 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Creating service: name='Full Body Massage', category='MASSAGE', by userId=5
-2026-07-13 16:52:00 [http-nio-8080-exec-4] INFO  org.example.service.ServiceService - Created service: id=17, name='Full Body Massage', category='MASSAGE', price=65, duration=75min, status=ACTIVE, createdBy=5
-2026-07-13 16:52:00 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Service created with id: 17
-2026-07-13 16:52:21 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:52:21 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:52:21 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:52:21 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:53:26 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:53:26 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:56:03 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:56:03 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:56:03 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:56:03 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:57:29 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:57:29 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:57:29 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:57:29 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:58:01 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Creating service: name='khan', category='MASSAGE', by userId=5
-2026-07-13 16:58:01 [http-nio-8080-exec-1] INFO  org.example.service.ServiceService - Created service: id=18, name='khan', category='MASSAGE', price=85, duration=60min, status=ACTIVE, createdBy=5
-2026-07-13 16:58:01 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Service created with id: 18
-2026-07-13 16:58:18 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:58:18 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 16:58:18 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:58:18 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 16:58:28 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:58:28 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 16:58:28 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:58:28 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 16:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:05:48 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login attempt for username=shop11
-2026-07-13 17:05:48 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login successful for username=shop11
-2026-07-13 17:05:48 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:05:48 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:05:48 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:05:48 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:06:00 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:06:00 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:06:00 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:06:00 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:06:30 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login attempt for username=shop11
-2026-07-13 17:06:30 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login successful for username=shop11
-2026-07-13 17:06:47 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:06:47 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:06:57 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "owner"]
-2026-07-13 17:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:07:33 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "owner"]
-2026-07-13 17:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:08:42 [http-nio-8080-exec-8] INFO  o.example.controller.UserController - Login attempt for username=admin
-2026-07-13 17:08:42 [http-nio-8080-exec-8] WARN  o.example.controller.UserController - Login failed for username=admin
-2026-07-13 17:08:56 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-07-13 17:08:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-07-13 17:08:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-07-13 17:09:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-2026-07-13 17:09:06 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 205977 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
-2026-07-13 17:09:06 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
-2026-07-13 17:09:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-07-13 17:09:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
-2026-07-13 17:09:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-07-13 17:09:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-07-13 17:09:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-07-13 17:09:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-07-13 17:09:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-07-13 17:09:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 789 ms
-2026-07-13 17:09:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-07-13 17:09:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
-2026-07-13 17:09:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-07-13 17:09:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-07-13 17:09:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-07-13 17:09:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4597e6e3
-2026-07-13 17:09:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-07-13 17:09:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-07-13 17:09:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2026-07-13 17:09:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-07-13 17:09:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-07-13 17:09:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-07-13 17:09:08 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+2026-07-14 17:11:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5605a59b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e8b36af, org.springframework.security.web.context.SecurityContextHolderFilter@4fae4c3b, org.springframework.security.web.header.HeaderWriterFilter@20e9b10b, org.springframework.web.filter.CorsFilter@d164938, org.springframework.security.web.authentication.logout.LogoutFilter@2530baf6, org.example.security.JwtAuthenticationFilter@3453acd2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cddc3d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3dcf6026, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cd079fe, org.springframework.security.web.access.ExceptionTranslationFilter@72c29d87, org.springframework.security.web.access.intercept.AuthorizationFilter@72ad577b]
+2026-07-14 17:11:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-14 17:11:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-14 17:11:17 [main] INFO  org.example.Main - Started Main in 2.984 seconds (process running for 3.344)
+2026-07-14 17:11:17 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
+2026-07-14 17:11:18 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-14 17:11:18 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-14 17:11:18 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-14 17:11:18 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test23234', by userId=5
+2026-07-14 17:11:18 [http-nio-8080-exec-2] WARN  o.e.c.GlobalExceptionHandler - Bad request: A staff member with this email already exists
+2026-07-14 17:11:29 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test23234', by userId=5
+2026-07-14 17:11:29 [http-nio-8080-exec-4] WARN  o.e.c.GlobalExceptionHandler - Bad request: A staff member with this email already exists
+2026-07-14 17:11:36 [http-nio-8080-exec-6] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test232345', by userId=5
+2026-07-14 17:11:36 [http-nio-8080-exec-6] WARN  o.e.c.GlobalExceptionHandler - Bad request: A staff member with this email already exists
+2026-07-14 17:11:49 [http-nio-8080-exec-8] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test232345', by userId=5
+2026-07-14 17:11:49 [http-nio-8080-exec-8] WARN  o.e.c.GlobalExceptionHandler - Bad request: Mobile number is already registered
+2026-07-14 17:11:59 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test232345', by userId=5
+2026-07-14 17:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:12:00 [http-nio-8080-exec-10] INFO  org.example.service.StaffService - Created user for staff: id=13, username='test232345', role=STAFF
+2026-07-14 17:12:00 [http-nio-8080-exec-10] INFO  org.example.service.StaffService - Created staff: id=10, name='test khan', position='BARBER', status=ACTIVE, user=13, createdBy=5
+2026-07-14 17:12:00 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Staff created with id: 10, userId: 13
+2026-07-14 17:12:15 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:12:15 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:12:15 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:12:15 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Total staff returned: 5
+2026-07-14 17:12:15 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:12:15 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Total staff returned: 5
+2026-07-14 17:12:15 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:12:15 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:12:38 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Updating staff with id: 8, by userId=5
+2026-07-14 17:12:38 [http-nio-8080-exec-4] INFO  org.example.service.StaffService - Updated staff: id=8, name='test khan', position='ESTHETICIAN', status=ACTIVE, updatedBy=5
+2026-07-14 17:12:38 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Staff updated for id: 8
+2026-07-14 17:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:16:33 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:16:33 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:16:33 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:16:33 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Total staff returned: 5
+2026-07-14 17:16:33 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:16:33 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:16:33 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:16:33 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Total staff returned: 5
+2026-07-14 17:16:39 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Deleting staff with id: 10
+2026-07-14 17:16:39 [http-nio-8080-exec-3] INFO  org.example.service.StaffService - Deleted staff: id=10
+2026-07-14 17:16:43 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Deleting staff with id: 9
+2026-07-14 17:16:43 [http-nio-8080-exec-5] INFO  org.example.service.StaffService - Deleted staff: id=9
+2026-07-14 17:16:45 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Deleting staff with id: 7
+2026-07-14 17:16:46 [http-nio-8080-exec-7] INFO  org.example.service.StaffService - Deleted staff: id=7
+2026-07-14 17:16:48 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Deleting staff with id: 8
+2026-07-14 17:16:48 [http-nio-8080-exec-10] INFO  org.example.service.StaffService - Deleted staff: id=8
+2026-07-14 17:16:50 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Deleting staff with id: 6
+2026-07-14 17:16:50 [http-nio-8080-exec-2] INFO  org.example.service.StaffService - Deleted staff: id=6
+2026-07-14 17:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:24:17 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Creating staff with user: firstName='testkhan123', lastName='khan', position='MASSAGE_THERAPIST', username='testkhan2344', by userId=5
+2026-07-14 17:24:17 [http-nio-8080-exec-2] INFO  org.example.service.StaffService - Created user for staff: id=14, username='testkhan2344', role=STAFF
+2026-07-14 17:24:17 [http-nio-8080-exec-2] INFO  org.example.service.StaffService - Created staff: id=11, name='testkhan123 khan', position='MASSAGE_THERAPIST', status=ACTIVE, user=14, createdBy=5
+2026-07-14 17:24:17 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Staff created with id: 11, userId: 14
+2026-07-14 17:24:35 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:24:35 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:24:35 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:24:35 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:24:35 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:24:35 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:24:35 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:24:35 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:24:50 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Updating staff with id: 11, by userId=5
+2026-07-14 17:24:50 [http-nio-8080-exec-5] INFO  org.example.service.StaffService - Updated staff: id=11, name='testkhan123 khanwewewe', position='MASSAGE_THERAPIST', status=ACTIVE, updatedBy=5
+2026-07-14 17:24:50 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Staff updated for id: 11
+2026-07-14 17:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 14
+2026-07-14 17:25:02 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Updating staff with id: 11, by userId=5
+2026-07-14 17:25:02 [http-nio-8080-exec-7] INFO  org.example.service.StaffService - Updated staff: id=11, name='testkhan123 khanwewewe', position='MASSAGE_THERAPIST', status=ACTIVE, updatedBy=5
+2026-07-14 17:25:02 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Staff updated for id: 11
+2026-07-14 17:25:10 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:25:10 [http-nio-8080-exec-6] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:25:10 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:25:10 [http-nio-8080-exec-6] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:25:10 [http-nio-8080-exec-8] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:25:10 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:25:10 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:25:10 [http-nio-8080-exec-8] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:25:52 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 17:25:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 17:25:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 17:26:00 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-14 17:26:00 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 190145 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
+2026-07-14 17:26:00 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 17:26:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 17:26:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-07-14 17:26:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-14 17:26:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-14 17:26:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-14 17:26:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-14 17:26:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-14 17:26:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 841 ms
+2026-07-14 17:26:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 17:26:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+2026-07-14 17:26:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 17:26:02 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 17:26:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 17:26:02 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1186374c
+2026-07-14 17:26:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 17:26:02 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-14 17:26:02 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-14 17:26:02 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 17:26:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 17:26:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 17:26:03 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 4b50adae-4159-4e8f-8131-e81c77686ce8
+Using generated security password: d32c76eb-60ce-46e7-ae46-7c1a68996410
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-07-13 17:09:08 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57063e08, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6afb240d, org.springframework.security.web.context.SecurityContextHolderFilter@224e7aa5, org.springframework.security.web.header.HeaderWriterFilter@2351255a, org.springframework.web.filter.CorsFilter@272f5373, org.springframework.security.web.authentication.logout.LogoutFilter@6aed4a23, org.example.security.JwtAuthenticationFilter@41fa769c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d145177, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e9d203e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@799557c8, org.springframework.security.web.access.ExceptionTranslationFilter@4a7c8cb7, org.springframework.security.web.access.intercept.AuthorizationFilter@36017835]
-2026-07-13 17:09:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-07-13 17:09:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2026-07-13 17:09:09 [main] INFO  org.example.Main - Started Main in 2.787 seconds (process running for 3.207)
-2026-07-13 17:09:09 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
-2026-07-13 17:09:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-07-13 17:09:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-07-13 17:09:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2026-07-13 17:09:14 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:09:14 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:09:49 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Creating service: name='Premium Massage', category='MASSAGE', by userId=6
-2026-07-13 17:09:49 [http-nio-8080-exec-5] INFO  org.example.service.ServiceService - Created service: id=19, name='Premium Massage', category='MASSAGE', price=100.00, duration=60min, status=ACTIVE, createdBy=6
-2026-07-13 17:09:49 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Service created with id: 19
-2026-07-13 17:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:10:01 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services for owner userId: 6
-2026-07-13 17:10:01 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services for owner 6: 1
-2026-07-13 17:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:11:18 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:18 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:18 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:18 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:18 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:18 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:18 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:19 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:25 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:25 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:25 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:25 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:31 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:31 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:31 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:31 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:44 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Creating service: name='test new', category='FACIAL', by userId=5
-2026-07-13 17:11:45 [http-nio-8080-exec-5] INFO  org.example.service.ServiceService - Created service: id=20, name='test new', category='FACIAL', price=85, duration=60min, status=ACTIVE, createdBy=5
-2026-07-13 17:11:45 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Service created with id: 20
-2026-07-13 17:11:48 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:48 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
-2026-07-13 17:11:48 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:48 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
-2026-07-13 17:11:54 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Deleting service with id: 20
-2026-07-13 17:11:54 [http-nio-8080-exec-5] INFO  org.example.service.ServiceService - Deleted service: id=20
-2026-07-13 17:11:59 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Deleting service with id: 18
-2026-07-13 17:11:59 [http-nio-8080-exec-7] INFO  org.example.service.ServiceService - Deleted service: id=18
-2026-07-13 17:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:12:15 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Creating service: name='Fullbody massage', category='MASSAGE', by userId=5
-2026-07-13 17:12:15 [http-nio-8080-exec-9] INFO  org.example.service.ServiceService - Created service: id=21, name='Fullbody massage', category='MASSAGE', price=85, duration=60min, status=ACTIVE, createdBy=5
-2026-07-13 17:12:15 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Service created with id: 21
-2026-07-13 17:12:23 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:12:23 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:12:23 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:12:23 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:37:44 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:37:44 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:37:44 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:37:44 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:42:10 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:42:10 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:42:10 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:42:10 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:42:14 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:42:14 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:42:14 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:42:14 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:42:41 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Creating service: name='test', category='FACIAL', by userId=5
-2026-07-13 17:42:41 [http-nio-8080-exec-3] INFO  org.example.service.ServiceService - Created service: id=22, name='test', category='FACIAL', price=85, duration=60min, status=ACTIVE, createdBy=5
-2026-07-13 17:42:41 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Service created with id: 22
-2026-07-13 17:42:53 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Updating service with id: 22, by userId=5
-2026-07-13 17:42:53 [http-nio-8080-exec-6] INFO  org.example.service.ServiceService - Updated service: id=22, name='test dfdfdfdfdf', category='FACIAL', price=85, duration=60min, status=ACTIVE, updatedBy=5
-2026-07-13 17:42:53 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Service updated for id: 22
-2026-07-13 17:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 18:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 18:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 18:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 18:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-14 17:26:03 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c5e7696, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f579582, org.springframework.security.web.context.SecurityContextHolderFilter@9e4388d, org.springframework.security.web.header.HeaderWriterFilter@2bd158ea, org.springframework.web.filter.CorsFilter@4769e70c, org.springframework.security.web.authentication.logout.LogoutFilter@22942eff, org.example.security.JwtAuthenticationFilter@733ec58b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21399e53, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@260043d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69346100, org.springframework.security.web.access.ExceptionTranslationFilter@3dcf6026, org.springframework.security.web.access.intercept.AuthorizationFilter@1f4b8027]
+2026-07-14 17:26:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-14 17:26:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-14 17:26:03 [main] INFO  org.example.Main - Started Main in 2.965 seconds (process running for 3.25)
+2026-07-14 17:26:03 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
+2026-07-14 17:26:07 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-14 17:26:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-14 17:26:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-07-14 17:26:08 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:26:08 [http-nio-8080-exec-9] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:26:08 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:26:08 [http-nio-8080-exec-9] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:26:08 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:26:08 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:26:08 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:26:08 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:26:34 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Updating staff with id: 11, by userId=5
+2026-07-14 17:26:34 [http-nio-8080-exec-4] INFO  org.example.service.StaffService - Updated staff: id=11, name='testkhan123 khanwewewe', position='MASSAGE_THERAPIST', status=ACTIVE, updatedBy=5
+2026-07-14 17:26:34 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Staff updated for id: 11
+2026-07-14 17:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 14

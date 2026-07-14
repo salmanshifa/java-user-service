@@ -60,7 +60,7 @@ public class UserService {
         });
     }
 
-    private void validateUniqueUserFields(String username, String email, String mobileNumber, Long currentUserId) {
+    public void validateUniqueUserFields(String username, String email, String mobileNumber, Long currentUserId) {
         userRepository.findByUsername(username)
                 .filter(entity -> currentUserId == null || !entity.getId().equals(currentUserId))
                 .ifPresent(entity -> {

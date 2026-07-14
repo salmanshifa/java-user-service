@@ -22,7 +22,7 @@ public record CreateUserRequest(
 
         @NotBlank(message = "Role is required")
         @Pattern(
-                regexp = "^(" + RoleConstants.CUSTOMER + "|" + RoleConstants.SHOP_OWNER + ")$",
+                regexp = "^(" + RoleConstants.CUSTOMER + "|" + RoleConstants.SHOP_OWNER + "|" + RoleConstants.STAFF + ")$",
                 message = "Role must be CUSTOMER or SHOP_OWNER"
         )
         String role,

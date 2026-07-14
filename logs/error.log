@@ -1,386 +1,189 @@
-2026-07-13 16:06:07 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:17:22 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 119025 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
-2026-07-13 16:17:22 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
-2026-07-13 16:17:24 [main] INFO  org.example.Main - Started Main in 2.749 seconds (process running for 3.178)
-2026-07-13 16:17:25 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
-2026-07-13 16:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:20:42 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 124789 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
-2026-07-13 16:20:42 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
-2026-07-13 16:20:45 [main] INFO  org.example.Main - Started Main in 2.73 seconds (process running for 3.132)
-2026-07-13 16:20:45 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
-2026-07-13 16:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:21:01 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:21:22 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:41:16 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:41:19 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:41:37 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:44:12 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 162945 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
-2026-07-13 16:44:12 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
-2026-07-13 16:44:14 [main] INFO  org.example.Main - Started Main in 2.9 seconds (process running for 3.261)
-2026-07-13 16:44:15 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Creating service: name='test', category='MASSAGE', by userId=5
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  org.example.service.ServiceService - Created service: id=16, name='test', category='MASSAGE', price=10.00, duration=10min, status=ACTIVE, createdBy=5
-2026-07-13 16:44:17 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Service created with id: 16
-2026-07-13 16:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:49:52 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:49:52 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:49:52 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:49:52 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:49:53 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:49:53 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:49:53 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:49:53 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:50:27 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:50:27 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:27 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:50:27 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:27 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:50:28 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:28 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:50:28 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services returned: 16
-2026-07-13 16:50:50 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Deleting service with id: 16
-2026-07-13 16:50:51 [http-nio-8080-exec-8] INFO  org.example.service.ServiceService - Deleted service: id=16
-2026-07-13 16:50:53 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Deleting service with id: 15
-2026-07-13 16:50:53 [http-nio-8080-exec-10] INFO  org.example.service.ServiceService - Deleted service: id=15
-2026-07-13 16:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:51:02 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:51:02 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 14
-2026-07-13 16:51:02 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:51:02 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 14
-2026-07-13 16:51:13 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Deleting service with id: 14
-2026-07-13 16:51:13 [http-nio-8080-exec-10] INFO  org.example.service.ServiceService - Deleted service: id=14
-2026-07-13 16:51:15 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Deleting service with id: 13
-2026-07-13 16:51:15 [http-nio-8080-exec-2] INFO  org.example.service.ServiceService - Deleted service: id=13
-2026-07-13 16:51:18 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Deleting service with id: 12
-2026-07-13 16:51:18 [http-nio-8080-exec-4] INFO  org.example.service.ServiceService - Deleted service: id=12
-2026-07-13 16:51:20 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:51:20 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services returned: 11
-2026-07-13 16:51:20 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:51:20 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services returned: 11
-2026-07-13 16:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:52:00 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Creating service: name='Full Body Massage', category='MASSAGE', by userId=5
-2026-07-13 16:52:00 [http-nio-8080-exec-4] INFO  org.example.service.ServiceService - Created service: id=17, name='Full Body Massage', category='MASSAGE', price=65, duration=75min, status=ACTIVE, createdBy=5
-2026-07-13 16:52:00 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Service created with id: 17
-2026-07-13 16:52:21 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:52:21 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:52:21 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:52:21 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:53:26 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:53:26 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:56:03 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:56:03 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:56:03 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:56:03 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:57:29 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:57:29 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:57:29 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:57:29 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services returned: 12
-2026-07-13 16:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 16:58:01 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Creating service: name='khan', category='MASSAGE', by userId=5
-2026-07-13 16:58:01 [http-nio-8080-exec-1] INFO  org.example.service.ServiceService - Created service: id=18, name='khan', category='MASSAGE', price=85, duration=60min, status=ACTIVE, createdBy=5
-2026-07-13 16:58:01 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Service created with id: 18
-2026-07-13 16:58:18 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:58:18 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 16:58:18 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:58:18 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 16:58:28 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:58:28 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 16:58:28 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 16:58:28 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 16:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 16:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:05:48 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login attempt for username=shop11
-2026-07-13 17:05:48 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - Login successful for username=shop11
-2026-07-13 17:05:48 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:05:48 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:05:48 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:05:48 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:06:00 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:06:00 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:06:00 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:06:00 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:06:30 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login attempt for username=shop11
-2026-07-13 17:06:30 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - Login successful for username=shop11
-2026-07-13 17:06:47 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services by status: ACTIVE
-2026-07-13 17:06:47 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services returned: 13
-2026-07-13 17:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 5
-2026-07-13 17:08:42 [http-nio-8080-exec-8] INFO  o.example.controller.UserController - Login attempt for username=admin
-2026-07-13 17:08:42 [http-nio-8080-exec-8] WARN  o.example.controller.UserController - Login failed for username=admin
-2026-07-13 17:09:06 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 205977 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
-2026-07-13 17:09:06 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
-2026-07-13 17:09:09 [main] INFO  org.example.Main - Started Main in 2.787 seconds (process running for 3.207)
-2026-07-13 17:09:09 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
-2026-07-13 17:09:14 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:09:14 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:09:49 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Creating service: name='Premium Massage', category='MASSAGE', by userId=6
-2026-07-13 17:09:49 [http-nio-8080-exec-5] INFO  org.example.service.ServiceService - Created service: id=19, name='Premium Massage', category='MASSAGE', price=100.00, duration=60min, status=ACTIVE, createdBy=6
-2026-07-13 17:09:49 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Service created with id: 19
-2026-07-13 17:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:10:01 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services for owner userId: 6
-2026-07-13 17:10:01 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services for owner 6: 1
-2026-07-13 17:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:11:18 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:18 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:18 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:18 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:18 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:18 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:18 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:19 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:25 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:25 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:25 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:25 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:31 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:31 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:31 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:31 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:11:44 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Creating service: name='test new', category='FACIAL', by userId=5
-2026-07-13 17:11:45 [http-nio-8080-exec-5] INFO  org.example.service.ServiceService - Created service: id=20, name='test new', category='FACIAL', price=85, duration=60min, status=ACTIVE, createdBy=5
-2026-07-13 17:11:45 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Service created with id: 20
-2026-07-13 17:11:48 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:48 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
-2026-07-13 17:11:48 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:11:48 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
-2026-07-13 17:11:54 [http-nio-8080-exec-5] INFO  o.e.controller.ServiceController - Deleting service with id: 20
-2026-07-13 17:11:54 [http-nio-8080-exec-5] INFO  org.example.service.ServiceService - Deleted service: id=20
-2026-07-13 17:11:59 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Deleting service with id: 18
-2026-07-13 17:11:59 [http-nio-8080-exec-7] INFO  org.example.service.ServiceService - Deleted service: id=18
-2026-07-13 17:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:12:15 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Creating service: name='Fullbody massage', category='MASSAGE', by userId=5
-2026-07-13 17:12:15 [http-nio-8080-exec-9] INFO  org.example.service.ServiceService - Created service: id=21, name='Fullbody massage', category='MASSAGE', price=85, duration=60min, status=ACTIVE, createdBy=5
-2026-07-13 17:12:15 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Service created with id: 21
-2026-07-13 17:12:23 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:12:23 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:12:23 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:12:23 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:26:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:28:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:29:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:30:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:31:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:32:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:33:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:34:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:35:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:36:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:37:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:37:44 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:37:44 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:37:44 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:37:44 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:38:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:39:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:40:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:41:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:42:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:42:10 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:42:10 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:42:10 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:42:10 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:42:14 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:42:14 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:42:14 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
-2026-07-13 17:42:14 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 2
-2026-07-13 17:42:41 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Creating service: name='test', category='FACIAL', by userId=5
-2026-07-13 17:42:41 [http-nio-8080-exec-3] INFO  org.example.service.ServiceService - Created service: id=22, name='test', category='FACIAL', price=85, duration=60min, status=ACTIVE, createdBy=5
-2026-07-13 17:42:41 [http-nio-8080-exec-3] INFO  o.e.controller.ServiceController - Service created with id: 22
-2026-07-13 17:42:53 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Updating service with id: 22, by userId=5
-2026-07-13 17:42:53 [http-nio-8080-exec-6] INFO  org.example.service.ServiceService - Updated service: id=22, name='test dfdfdfdfdf', category='FACIAL', price=85, duration=60min, status=ACTIVE, updatedBy=5
-2026-07-13 17:42:53 [http-nio-8080-exec-6] INFO  o.e.controller.ServiceController - Service updated for id: 22
-2026-07-13 17:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:43:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:44:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:45:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:46:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:47:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:48:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:49:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:50:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:51:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:52:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:53:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 17:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 17:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 18:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 18:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
-2026-07-13 18:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
-2026-07-13 18:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 6
+2026-07-14 16:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:54:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 10
+2026-07-14 16:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:55:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 10
+2026-07-14 16:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:56:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 10
+2026-07-14 16:56:21 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login attempt for username=shop11
+2026-07-14 16:56:21 [http-nio-8080-exec-9] INFO  o.example.controller.UserController - Login successful for username=shop11
+2026-07-14 16:56:21 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 16:56:21 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 16:56:21 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Total staff returned: 2
+2026-07-14 16:56:21 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 16:56:21 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 16:56:21 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 16:56:21 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 16:56:21 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Total staff returned: 2
+2026-07-14 16:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:57:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 10
+2026-07-14 16:57:03 [http-nio-8080-exec-9] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='ESTHETICIAN', username='test121212', by userId=5
+2026-07-14 16:57:03 [http-nio-8080-exec-9] INFO  org.example.service.StaffService - Created user for staff: id=11, username='test121212', role=STAFF
+2026-07-14 16:57:03 [http-nio-8080-exec-9] INFO  org.example.service.StaffService - Created staff: id=8, name='test khan', position='ESTHETICIAN', status=ACTIVE, user=11, createdBy=5
+2026-07-14 16:57:03 [http-nio-8080-exec-9] INFO  o.example.controller.StaffController - Staff created with id: 8, userId: 11
+2026-07-14 16:57:21 [http-nio-8080-exec-1] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 16:57:21 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 16:57:21 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 16:57:21 [http-nio-8080-exec-1] INFO  o.example.controller.StaffController - Total staff returned: 3
+2026-07-14 16:57:21 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 16:57:21 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 16:57:21 [http-nio-8080-exec-4] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 16:57:21 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Total staff returned: 3
+2026-07-14 16:57:33 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Updating staff with id: 8, by userId=5
+2026-07-14 16:57:33 [http-nio-8080-exec-5] INFO  org.example.service.StaffService - Updated staff: id=8, name='test khan', position='ESTHETICIAN', status=ACTIVE, updatedBy=5
+2026-07-14 16:57:33 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Staff updated for id: 8
+2026-07-14 16:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:58:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 16:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 16:59:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:00:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:01:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:02:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:03:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:03:44 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login attempt for username=shop11
+2026-07-14 17:03:44 [http-nio-8080-exec-2] INFO  o.example.controller.UserController - Login successful for username=shop11
+2026-07-14 17:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:04:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 11
+2026-07-14 17:04:00 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test2323', by userId=5
+2026-07-14 17:04:00 [http-nio-8080-exec-4] WARN  o.e.c.GlobalExceptionHandler - Bad request: A staff member with this email already exists
+2026-07-14 17:04:14 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test2323', by userId=5
+2026-07-14 17:04:14 [http-nio-8080-exec-5] WARN  o.e.c.GlobalExceptionHandler - Bad request: Username is already taken
+2026-07-14 17:04:28 [http-nio-8080-exec-8] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test23234', by userId=5
+2026-07-14 17:04:28 [http-nio-8080-exec-8] WARN  o.e.c.GlobalExceptionHandler - Bad request: Mobile number is already registered
+2026-07-14 17:04:37 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test23234', by userId=5
+2026-07-14 17:04:37 [http-nio-8080-exec-7] INFO  org.example.service.StaffService - Created user for staff: id=12, username='test23234', role=STAFF
+2026-07-14 17:04:37 [http-nio-8080-exec-7] INFO  org.example.service.StaffService - Created staff: id=9, name='test khan', position='BARBER', status=ACTIVE, user=12, createdBy=5
+2026-07-14 17:04:37 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Staff created with id: 9, userId: 12
+2026-07-14 17:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:05:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:06:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:07:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:08:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:09:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:10:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:11:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:11:14 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 165048 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
+2026-07-14 17:11:14 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 17:11:17 [main] INFO  org.example.Main - Started Main in 2.984 seconds (process running for 3.344)
+2026-07-14 17:11:17 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
+2026-07-14 17:11:18 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test23234', by userId=5
+2026-07-14 17:11:18 [http-nio-8080-exec-2] WARN  o.e.c.GlobalExceptionHandler - Bad request: A staff member with this email already exists
+2026-07-14 17:11:29 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test23234', by userId=5
+2026-07-14 17:11:29 [http-nio-8080-exec-4] WARN  o.e.c.GlobalExceptionHandler - Bad request: A staff member with this email already exists
+2026-07-14 17:11:36 [http-nio-8080-exec-6] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test232345', by userId=5
+2026-07-14 17:11:36 [http-nio-8080-exec-6] WARN  o.e.c.GlobalExceptionHandler - Bad request: A staff member with this email already exists
+2026-07-14 17:11:49 [http-nio-8080-exec-8] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test232345', by userId=5
+2026-07-14 17:11:49 [http-nio-8080-exec-8] WARN  o.e.c.GlobalExceptionHandler - Bad request: Mobile number is already registered
+2026-07-14 17:11:59 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Creating staff with user: firstName='test', lastName='khan', position='BARBER', username='test232345', by userId=5
+2026-07-14 17:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:12:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 12
+2026-07-14 17:12:00 [http-nio-8080-exec-10] INFO  org.example.service.StaffService - Created user for staff: id=13, username='test232345', role=STAFF
+2026-07-14 17:12:00 [http-nio-8080-exec-10] INFO  org.example.service.StaffService - Created staff: id=10, name='test khan', position='BARBER', status=ACTIVE, user=13, createdBy=5
+2026-07-14 17:12:00 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Staff created with id: 10, userId: 13
+2026-07-14 17:12:15 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:12:15 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:12:15 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:12:15 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Total staff returned: 5
+2026-07-14 17:12:15 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:12:15 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Total staff returned: 5
+2026-07-14 17:12:15 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:12:15 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:12:38 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Updating staff with id: 8, by userId=5
+2026-07-14 17:12:38 [http-nio-8080-exec-4] INFO  org.example.service.StaffService - Updated staff: id=8, name='test khan', position='ESTHETICIAN', status=ACTIVE, updatedBy=5
+2026-07-14 17:12:38 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Staff updated for id: 8
+2026-07-14 17:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:13:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:14:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:15:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:16:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:16:33 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:16:33 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:16:33 [http-nio-8080-exec-8] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:16:33 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Total staff returned: 5
+2026-07-14 17:16:33 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:16:33 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:16:33 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:16:33 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Total staff returned: 5
+2026-07-14 17:16:39 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Deleting staff with id: 10
+2026-07-14 17:16:39 [http-nio-8080-exec-3] INFO  org.example.service.StaffService - Deleted staff: id=10
+2026-07-14 17:16:43 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Deleting staff with id: 9
+2026-07-14 17:16:43 [http-nio-8080-exec-5] INFO  org.example.service.StaffService - Deleted staff: id=9
+2026-07-14 17:16:45 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Deleting staff with id: 7
+2026-07-14 17:16:46 [http-nio-8080-exec-7] INFO  org.example.service.StaffService - Deleted staff: id=7
+2026-07-14 17:16:48 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Deleting staff with id: 8
+2026-07-14 17:16:48 [http-nio-8080-exec-10] INFO  org.example.service.StaffService - Deleted staff: id=8
+2026-07-14 17:16:50 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Deleting staff with id: 6
+2026-07-14 17:16:50 [http-nio-8080-exec-2] INFO  org.example.service.StaffService - Deleted staff: id=6
+2026-07-14 17:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:17:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:18:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:19:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:20:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:21:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:22:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:23:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:24:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 13
+2026-07-14 17:24:17 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Creating staff with user: firstName='testkhan123', lastName='khan', position='MASSAGE_THERAPIST', username='testkhan2344', by userId=5
+2026-07-14 17:24:17 [http-nio-8080-exec-2] INFO  org.example.service.StaffService - Created user for staff: id=14, username='testkhan2344', role=STAFF
+2026-07-14 17:24:17 [http-nio-8080-exec-2] INFO  org.example.service.StaffService - Created staff: id=11, name='testkhan123 khan', position='MASSAGE_THERAPIST', status=ACTIVE, user=14, createdBy=5
+2026-07-14 17:24:17 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Staff created with id: 11, userId: 14
+2026-07-14 17:24:35 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:24:35 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:24:35 [http-nio-8080-exec-10] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:24:35 [http-nio-8080-exec-2] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:24:35 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:24:35 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:24:35 [http-nio-8080-exec-3] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:24:35 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:24:50 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Updating staff with id: 11, by userId=5
+2026-07-14 17:24:50 [http-nio-8080-exec-5] INFO  org.example.service.StaffService - Updated staff: id=11, name='testkhan123 khanwewewe', position='MASSAGE_THERAPIST', status=ACTIVE, updatedBy=5
+2026-07-14 17:24:50 [http-nio-8080-exec-5] INFO  o.example.controller.StaffController - Staff updated for id: 11
+2026-07-14 17:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:25:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 14
+2026-07-14 17:25:02 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Updating staff with id: 11, by userId=5
+2026-07-14 17:25:02 [http-nio-8080-exec-7] INFO  org.example.service.StaffService - Updated staff: id=11, name='testkhan123 khanwewewe', position='MASSAGE_THERAPIST', status=ACTIVE, updatedBy=5
+2026-07-14 17:25:02 [http-nio-8080-exec-7] INFO  o.example.controller.StaffController - Staff updated for id: 11
+2026-07-14 17:25:10 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:25:10 [http-nio-8080-exec-6] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:25:10 [http-nio-8080-exec-7] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:25:10 [http-nio-8080-exec-6] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:25:10 [http-nio-8080-exec-8] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:25:10 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:25:10 [http-nio-8080-exec-9] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:25:10 [http-nio-8080-exec-8] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:26:00 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 17.0.19 with PID 190145 (/mnt/projects/java-user-auth-service/target/java-user-auth-service-1.0-SNAPSHOT.jar started by mohd in /mnt/projects/java-user-auth-service)
+2026-07-14 17:26:00 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 17:26:03 [main] INFO  org.example.Main - Started Main in 2.965 seconds (process running for 3.25)
+2026-07-14 17:26:03 [main] INFO  org.example.config.DataSeeder - Services already seeded, skipping data initialization
+2026-07-14 17:26:08 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:26:08 [http-nio-8080-exec-9] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:26:08 [http-nio-8080-exec-10] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:26:08 [http-nio-8080-exec-9] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:26:08 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Reading all staff
+2026-07-14 17:26:08 [http-nio-8080-exec-2] INFO  o.example.controller.StaffController - Total staff returned: 1
+2026-07-14 17:26:08 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Reading services for owner userId: 5
+2026-07-14 17:26:08 [http-nio-8080-exec-1] INFO  o.e.controller.ServiceController - Total services for owner 5: 3
+2026-07-14 17:26:34 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Updating staff with id: 11, by userId=5
+2026-07-14 17:26:34 [http-nio-8080-exec-4] INFO  org.example.service.StaffService - Updated staff: id=11, name='testkhan123 khanwewewe', position='MASSAGE_THERAPIST', status=ACTIVE, updatedBy=5
+2026-07-14 17:26:34 [http-nio-8080-exec-4] INFO  o.example.controller.StaffController - Staff updated for id: 11
+2026-07-14 17:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - counting users...
+2026-07-14 17:27:00 [scheduling-1] INFO  o.e.scheduler.UserCountScheduler - Scheduled job [0 * * * * *] - current user count: 14
