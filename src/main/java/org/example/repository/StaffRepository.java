@@ -22,4 +22,6 @@ public interface StaffRepository extends JpaRepository<StaffEntity, Long> {
     boolean existsByEmail(String email);
 
     Optional<StaffEntity> findByEmail(String email);
+
+    List<StaffEntity> findByCreatedBy(Long createdBy);
 }

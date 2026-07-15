@@ -11,4 +11,19 @@ public final class PositionConstants {
 
     private PositionConstants() {
     }
+
+    /**
+     * Maps a staff position to its default service category.
+     * Non-service positions (RECEPTIONIST, MANAGER) return null.
+     */
+    public static String toCategory(String position) {
+        if (position == null) return null;
+        return switch (position.toUpperCase()) {
+            case STYLIST, BARBER -> CategoryConstants.HAIR;
+            case NAIL_TECH -> CategoryConstants.NAILS;
+            case MASSAGE_THERAPIST -> CategoryConstants.MASSAGE;
+            case ESTHETICIAN -> CategoryConstants.FACIAL;
+            default -> null;
+        };
+    }
 }

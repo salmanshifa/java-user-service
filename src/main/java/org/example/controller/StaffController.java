@@ -5,10 +5,13 @@ import org.example.controller.dto.ApiResponse;
 import org.example.controller.dto.CreateStaffRequest;
 import org.example.controller.dto.CreateStaffResponse;
 import org.example.controller.dto.UpdateStaffRequest;
+import org.example.model.Booking;
+import org.example.model.BookingStatus;
 import org.example.model.EmploymentStatus;
 import org.example.model.Staff;
 import org.example.model.User;
 import org.example.security.AuthenticatedUser;
+import org.example.service.BookingService;
 import org.example.service.StaffService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +29,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.net.URI;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import org.springframework.format.annotation.DateTimeFormat;
 import java.util.List;
 
 @RestController
@@ -35,9 +42,11 @@ public class StaffController {
     private static final Logger log = LoggerFactory.getLogger(StaffController.class);
 
     private final StaffService staffService;
+    private final BookingService bookingService;
 
-    public StaffController(StaffService staffService) {
+    public StaffController(StaffService staffService, BookingService bookingService) {
         this.staffService = staffService;
+        this.bookingService = bookingService;
     }
 
     @GetMapping
@@ -88,6 +97,37 @@ public class StaffController {
         return ResponseEntity.ok(ApiResponse.success("Staff retrieved", staffList));
     }
 
+    @GetMapping("/{staffId}/bookings")
+    public ResponseEntity<ApiResponse<List<Booking>>> getStaffBookings(
+            @PathVariable Long staffId,
+            @RequestParam(required = false) BookingStatus status,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+
+        log.info("Reading bookings for staff id: {}", staffId);
+
+        List<Booking> bookings;
+
+        if (date != null && status != null) {
+            LocalDateTime start = date.atStartOfDay();
+            LocalDateTime end = date.atTime(LocalTime.MAX);
+            log.info("Filtering staff bookings by status: {} and date: {}", status, date);
+            bookings = bookingService.findByStaffIdAndStatusAndDateRange(staffId, status, start, end);
+        } else if (date != null) {
+            LocalDateTime start = date.atStartOfDay();
+            LocalDateTime end = date.atTime(LocalTime.MAX);
+            log.info("Filtering staff bookings by date: {}", date);
+            bookings = bookingService.findByStaffIdAndDateRange(staffId, start, end);
+        } else if (status != null) {
+            log.info("Filtering staff bookings by status: {}", status);
+            bookings = bookingService.findByStaffIdAndStatus(staffId, status);
+        } else {
+            bookings = bookingService.findByStaffId(staffId);
+        }
+
+        log.info("Total bookings for staff {}: {}", staffId, bookings.size());
+        return ResponseEntity.ok(ApiResponse.success("Bookings retrieved", bookings));
+    }
+
     @PostMapping
     public ResponseEntity<ApiResponse<CreateStaffResponse>> createStaff(
             @Valid @RequestBody CreateStaffRequest request,
@@ -107,12 +147,14 @@ public class StaffController {
                 request.workSchedule(),
                 request.username(),
                 request.password(),
-                request.mobileNumber(),
+                request.phone(),
+                request.specialty(),
+                request.serviceCategories(),
                 currentUserId
         );
 
         // Build the user model from the newly created user
-        User user = new User(created.userId(), request.username(), request.email(), request.mobileNumber(), org.example.model.RoleConstants.STAFF, true);
+        User user = new User(created.userId(), request.username(), request.email(), request.phone(), org.example.model.RoleConstants.STAFF, true);
         String token = staffService.generateJwtToken(user);
         CreateStaffResponse response = CreateStaffResponse.of(created, user, token);
 
@@ -140,6 +182,8 @@ public class StaffController {
                 request.hireDate(),
                 request.employmentStatus(),
                 request.workSchedule(),
+                request.specialty(),
+                request.serviceCategories(),
                 request.userId(),
                 currentUserId
         ).map(staff -> {

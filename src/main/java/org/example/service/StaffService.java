@@ -1,5 +1,8 @@
 package org.example.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.entity.StaffEntity;
 import org.example.model.EmploymentStatus;
 import org.example.model.PositionConstants;
@@ -13,6 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -24,10 +28,12 @@ public class StaffService {
 
     private final StaffRepository staffRepository;
     private final UserService userService;
+    private final ObjectMapper objectMapper;
 
-    public StaffService(StaffRepository staffRepository, UserService userService) {
+    public StaffService(StaffRepository staffRepository, UserService userService, ObjectMapper objectMapper) {
         this.staffRepository = staffRepository;
         this.userService = userService;
+        this.objectMapper = objectMapper;
     }
 
     public List<Staff> findAll() {
@@ -68,20 +74,28 @@ public class StaffService {
     public Staff create(String firstName, String lastName, String email,
                         String position, String specialization, LocalDate hireDate,
                         EmploymentStatus employmentStatus, String workSchedule,
-                        String username, String password, String mobileNumber,
+                        String username, String password, String phone,
+                        String specialty, List<String> serviceCategories,
                         Long createdBy) {
         // Validate against both tables first, before any writes
         validateUniqueEmail(email, null);
         validatePosition(position);
-        userService.validateUniqueUserFields(username, email, mobileNumber, null);
+        userService.validateUniqueUserFields(username, email, phone, null);
+
+        // Derive specialization (category) from position if not explicitly provided
+        String resolvedSpecialization = (specialization != null && !specialization.isBlank())
+                ? specialization.toUpperCase()
+                : PositionConstants.toCategory(position);
 
         // Create user login data for staff
-        User createdUser = userService.create(username, email, mobileNumber, password, true, RoleConstants.STAFF);
+        User createdUser = userService.create(username, email, phone, password, true, RoleConstants.STAFF);
         log.info("Created user for staff: id={}, username='{}', role=STAFF", createdUser.id(), createdUser.username());
 
         // Create staff record linked to the newly created user
-        StaffEntity staffEntity = new StaffEntity(firstName, lastName, email, mobileNumber,
-                position, specialization, hireDate, employmentStatus, workSchedule);
+        String serviceCategoriesJson = serializeServiceCategories(serviceCategories);
+        StaffEntity staffEntity = new StaffEntity(firstName, lastName, email, phone,
+                position, resolvedSpecialization, hireDate, employmentStatus, workSchedule,
+                specialty, serviceCategoriesJson);
         staffEntity.setUserId(createdUser.id());
         staffEntity.setCreatedBy(createdBy);
         staffEntity.setUpdatedBy(createdBy);
@@ -99,21 +113,29 @@ public class StaffService {
 
     public Optional<Staff> update(Long id, String firstName, String lastName, String email, String phone,
                                   String position, String specialization, LocalDate hireDate,
-                                  EmploymentStatus employmentStatus, String workSchedule, Long userId,
+                                  EmploymentStatus employmentStatus, String workSchedule,
+                                  String specialty, List<String> serviceCategories, Long userId,
                                   Long updatedBy) {
         return staffRepository.findById(id).map(entity -> {
             validateUniqueEmail(email, id);
             validatePosition(position);
+
+            // Derive specialization (category) from position if not explicitly provided
+            String resolvedSpecialization = (specialization != null && !specialization.isBlank())
+                    ? specialization.toUpperCase()
+                    : PositionConstants.toCategory(position);
 
             entity.setFirstName(firstName);
             entity.setLastName(lastName);
             entity.setEmail(email);
             entity.setPhone(phone);
             entity.setPosition(position);
-            entity.setSpecialization(specialization);
+            entity.setSpecialization(resolvedSpecialization);
             entity.setHireDate(hireDate);
             entity.setEmploymentStatus(employmentStatus);
             entity.setWorkSchedule(workSchedule);
+            entity.setSpecialty(specialty);
+            entity.setServiceCategories(serializeServiceCategories(serviceCategories));
             entity.setUserId(userId);
             entity.setUpdatedBy(updatedBy);
 
@@ -167,6 +189,30 @@ public class StaffService {
                 });
     }
 
+    private String serializeServiceCategories(List<String> serviceCategories) {
+        if (serviceCategories == null || serviceCategories.isEmpty()) {
+            return null;
+        }
+        try {
+            return objectMapper.writeValueAsString(serviceCategories);
+        } catch (JsonProcessingException e) {
+            log.error("Failed to serialize service categories: {}", serviceCategories, e);
+            return null;
+        }
+    }
+
+    private List<String> deserializeServiceCategories(String json) {
+        if (json == null || json.isBlank()) {
+            return Collections.emptyList();
+        }
+        try {
+            return objectMapper.readValue(json, new TypeReference<List<String>>() {});
+        } catch (JsonProcessingException e) {
+            log.error("Failed to deserialize service categories: {}", json, e);
+            return Collections.emptyList();
+        }
+    }
+
     private Staff toModel(StaffEntity entity) {
         return new Staff(
                 entity.getId(),
@@ -180,6 +226,8 @@ public class StaffService {
                 entity.getHireDate(),
                 entity.getEmploymentStatus(),
                 entity.getWorkSchedule(),
+                entity.getSpecialty(),
+                deserializeServiceCategories(entity.getServiceCategories()),
                 entity.getCreatedBy(),
                 entity.getCreatedAt(),
                 entity.getUpdatedBy(),

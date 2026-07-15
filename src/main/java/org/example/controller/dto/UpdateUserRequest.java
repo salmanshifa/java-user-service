@@ -12,9 +12,9 @@ public record UpdateUserRequest(
         @Email(message = "Email must be valid")
         String email,
 
-        @NotBlank(message = "Mobile number is required")
-        @Pattern(regexp = "^\\+?[1-9]\\d{7,14}$", message = "Mobile number must be a valid international number")
-        String mobileNumber,
+        @NotBlank(message = "Phone is required")
+        @Pattern(regexp = "^\\+?[1-9]\\d{7,14}$", message = "Phone must be a valid international number")
+        String phone,
 
         @NotBlank(message = "Role is required")
         String role

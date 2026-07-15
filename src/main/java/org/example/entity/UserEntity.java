@@ -20,8 +20,8 @@ public class UserEntity {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(name = "mobile_number", nullable = false, unique = true, length = 15)
-    private String mobileNumber;
+    @Column(name = "phone", nullable = false, unique = true, length = 15)
+    private String phone;
 
     private String password;
     private String role;
@@ -30,10 +30,10 @@ public class UserEntity {
     protected UserEntity() {
     }
 
-    public UserEntity(String username, String email, String mobileNumber, String role, boolean enabled, String password) {
+    public UserEntity(String username, String email, String phone, String role, boolean enabled, String password) {
         this.username = username;
         this.email = email;
-        this.mobileNumber = mobileNumber;
+        this.phone = phone;
         this.enabled = enabled;
         this.role = role;
         this.password = password;
@@ -78,11 +78,11 @@ public class UserEntity {
         this.email = email;
     }
 
-    public String getMobileNumber() {
-        return mobileNumber;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setMobileNumber(String mobileNumber) {
-        this.mobileNumber = mobileNumber;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

@@ -5,10 +5,12 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import org.example.model.CategoryConstants;
 import org.example.model.EmploymentStatus;
 import org.example.model.PositionConstants;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public record UpdateStaffRequest(
 
@@ -34,7 +36,10 @@ public record UpdateStaffRequest(
         )
         String position,
 
-        @Size(max = 50, message = "Specialization must not exceed 50 characters")
+        @Pattern(
+                regexp = "^(|" + CategoryConstants.MASSAGE + "|" + CategoryConstants.HAIR + "|" + CategoryConstants.FACIAL + "|" + CategoryConstants.NAILS + ")$",
+                message = "Specialization must be one of: MASSAGE, HAIR, FACIAL, NAILS"
+        )
         String specialization,
 
         LocalDate hireDate,
@@ -44,6 +49,11 @@ public record UpdateStaffRequest(
 
         @Size(max = 500, message = "Work schedule must not exceed 500 characters")
         String workSchedule,
+
+        @Size(max = 500, message = "Specialty must not exceed 500 characters")
+        String specialty,
+
+        List<String> serviceCategories,
 
         Long userId
 

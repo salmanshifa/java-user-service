@@ -43,24 +43,24 @@ public class UserService {
                 .map(this::toModel);
     }
 
-    public User create(String username, String email, String mobileNumber, String password, boolean enabled, String role) {
-        validateUniqueUserFields(username, email, mobileNumber, null);
+    public User create(String username, String email, String phone, String password, boolean enabled, String role) {
+        validateUniqueUserFields(username, email, phone, null);
         String encodedPassword = passwordEncoder.encode(password);
-        UserEntity entity = userRepository.save(new UserEntity(username, email, mobileNumber, role, enabled, encodedPassword));
+        UserEntity entity = userRepository.save(new UserEntity(username, email, phone, role, enabled, encodedPassword));
         return toModel(entity);
     }
 
-    public Optional<User> update(Long id, String username, String email, String mobileNumber) {
+    public Optional<User> update(Long id, String username, String email, String phone) {
         return userRepository.findById(id).map(entity -> {
-            validateUniqueUserFields(username, email, mobileNumber, id);
+            validateUniqueUserFields(username, email, phone, id);
             entity.setUsername(username);
             entity.setEmail(email);
-            entity.setMobileNumber(mobileNumber);
+            entity.setPhone(phone);
             return toModel(userRepository.save(entity));
         });
     }
 
-    public void validateUniqueUserFields(String username, String email, String mobileNumber, Long currentUserId) {
+    public void validateUniqueUserFields(String username, String email, String phone, Long currentUserId) {
         userRepository.findByUsername(username)
                 .filter(entity -> currentUserId == null || !entity.getId().equals(currentUserId))
                 .ifPresent(entity -> {
@@ -73,10 +73,10 @@ public class UserService {
                     throw new IllegalArgumentException("Email is already registered");
                 });
 
-        userRepository.findByMobileNumber(mobileNumber)
+        userRepository.findByPhone(phone)
                 .filter(entity -> currentUserId == null || !entity.getId().equals(currentUserId))
                 .ifPresent(entity -> {
-                    throw new IllegalArgumentException("Mobile number is already registered");
+                    throw new IllegalArgumentException("Phone is already registered");
                 });
     }
 
@@ -97,6 +97,6 @@ public class UserService {
     }
 
     private User toModel(UserEntity entity) {
-        return new User(entity.getId(), entity.getUsername(), entity.getEmail(), entity.getMobileNumber(), entity.getRole(), entity.isEnabled());
+        return new User(entity.getId(), entity.getUsername(), entity.getEmail(), entity.getPhone(), entity.getRole(), entity.isEnabled());
     }
 }

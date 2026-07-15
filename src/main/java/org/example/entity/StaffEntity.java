@@ -55,6 +55,12 @@ public class StaffEntity {
     @Column(name = "work_schedule", columnDefinition = "TEXT")
     private String workSchedule;
 
+    @Column(columnDefinition = "TEXT")
+    private String specialty;
+
+    @Column(name = "service_categories", columnDefinition = "TEXT")
+    private String serviceCategories;
+
     @Column(name = "created_by")
     private Long createdBy;
 
@@ -72,7 +78,8 @@ public class StaffEntity {
 
     public StaffEntity(String firstName, String lastName, String email, String phone,
                        String position, String specialization, LocalDate hireDate,
-                       EmploymentStatus employmentStatus, String workSchedule) {
+                       EmploymentStatus employmentStatus, String workSchedule,
+                       String specialty, String serviceCategories) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -82,6 +89,8 @@ public class StaffEntity {
         this.hireDate = hireDate;
         this.employmentStatus = employmentStatus;
         this.workSchedule = workSchedule;
+        this.specialty = specialty;
+        this.serviceCategories = serviceCategories;
     }
 
     @PrePersist
@@ -177,6 +186,22 @@ public class StaffEntity {
 
     public void setWorkSchedule(String workSchedule) {
         this.workSchedule = workSchedule;
+    }
+
+    public String getSpecialty() {
+        return specialty;
+    }
+
+    public void setSpecialty(String specialty) {
+        this.specialty = specialty;
+    }
+
+    public String getServiceCategories() {
+        return serviceCategories;
+    }
+
+    public void setServiceCategories(String serviceCategories) {
+        this.serviceCategories = serviceCategories;
     }
 
     public Long getCreatedBy() {

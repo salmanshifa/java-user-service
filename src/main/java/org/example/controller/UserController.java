@@ -69,7 +69,7 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity<ApiResponse<CreateUserResponse>> createUser(@Valid @RequestBody CreateUserRequest request) {
-        User created = userService.create(request.username(), request.email(), request.mobileNumber(), request.password(), true, request.role());
+        User created = userService.create(request.username(), request.email(), request.phone(), request.password(), true, request.role());
         String token = userService.generateJwtToken(created);
         CreateUserResponse response = new CreateUserResponse(created, token);
         return ResponseEntity.created(URI.create("/users/" + created.id()))
@@ -99,7 +99,7 @@ public class UserController {
 
     @PutMapping("/{id}")
     public ResponseEntity<ApiResponse<User>> updateUser(@PathVariable Long id, @Valid @RequestBody UpdateUserRequest request) {
-        return userService.update(id, request.username(), request.email(), request.mobileNumber())
+        return userService.update(id, request.username(), request.email(), request.phone())
                 .map(user -> ResponseEntity.ok(ApiResponse.success("User updated", user)))
                 .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND)
                         .body(ApiResponse.error("User not found", null)));
